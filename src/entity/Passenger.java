@@ -24,10 +24,11 @@ public class Passenger extends User{
     public void setBookedTrips(List<Trip> bookedTrips) {
         this.bookedTrips = bookedTrips;
     }
+
+    @Override
+    public String toString() {
+        return "Passenger{" +
+                "bookedTrips=" + bookedTrips +
+                '}';
+    }
 }
-
-// QuickRide Code 1 -> complete business logic -> 18th
-//19th break
-// QuickRide Code 2 -> Sprint Boot and Unit Testing -> 21st
-
-//Project Module -> 25th

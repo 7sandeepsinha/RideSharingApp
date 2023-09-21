@@ -1,19 +1,21 @@
-package entity;
+package dto;
 
-public class Vehicle {
-    private int id;
+import entity.Driver;
+import entity.VehicleType;
+
+public class VehicleRegistrationDto {
     private String name;
     private String number;
     private VehicleType type;
     private String color;
-    private Driver owner;
+    private int ownerId;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public VehicleRegistrationDto(String name, String number, VehicleType type, String color, int ownerId) {
+        this.name = name;
+        this.number = number;
+        this.type = type;
+        this.color = color;
+        this.ownerId = ownerId;
     }
 
     public String getName() {
@@ -48,23 +50,11 @@ public class Vehicle {
         this.color = color;
     }
 
-    public Driver getOwner() {
-        return owner;
+    public int getOwnerId() {
+        return ownerId;
     }
 
-    public void setOwner(Driver owner) {
-        this.owner = owner;
-    }
-
-    @Override
-    public String toString() {
-        return "Vehicle{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", number='" + number + '\'' +
-                ", type=" + type +
-                ", color='" + color + '\'' +
-                ", owner=" + owner +
-                '}';
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
     }
 }

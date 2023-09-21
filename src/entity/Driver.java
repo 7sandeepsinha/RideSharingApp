@@ -30,4 +30,19 @@ public class Driver extends User{
     public void setTrips(List<Trip> trips) {
         this.trips = trips;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + super.getId() +
+                ", name='" + super.getName() + '\'' +
+                ", age=" + super.getAge() +
+                ", phoneNumber='" + super.getPhoneNumber() + '\'' +
+                ", rating=" + super.getRating() +
+                ", reviews=" + super.getReviews() +
+                ", gender=" + super.getGender() +
+                ", vehicles=" + vehicles +
+                ", trips=" + trips +
+                '}';
+    }
 }

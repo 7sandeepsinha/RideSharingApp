@@ -79,4 +79,17 @@ public abstract class User {
     public void setGender(char gender) {
         this.gender = gender;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", rating=" + rating +
+                ", reviews=" + reviews +
+                ", gender=" + gender +
+                '}';
+    }
 }
